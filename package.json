@@ -1,0 +1,44 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "seed": "ts-node scripts/seed-products.ts",
+    "test:products": "node --loader ts-node/esm scripts/test-products.ts",
+    "setup:db": "node --loader ts-node/esm scripts/setup-database.ts"
+  },
+  "dependencies": {
+    "@headlessui/react": "^1.7.17",
+    "@heroicons/react": "^2.0.18",
+    "@sendgrid/mail": "^7.7.0",
+    "@stripe/stripe-js": "^2.1.7",
+    "@supabase/ssr": "latest",
+    "@supabase/supabase-js": "^2.38.0",
+    "next": "^16.0.1",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "stripe": "^13.9.0",
+    "zustand": "^4.4.3"
+  },
+  "devDependencies": {
+    "@tailwindcss/aspect-ratio": "^0.4.2",
+    "@tailwindcss/forms": "^0.5.10",
+    "@tailwindcss/typography": "^0.5.19",
+    "@types/node": "^20.8.3",
+    "@types/react": "^18.2.25",
+    "@types/react-dom": "^18.2.11",
+    "autoprefixer": "^10.4.21",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.0.0",
+    "dotenv": "^16.3.1",
+    "eslint": "^9.39.1",
+    "eslint-config-next": "^16.0.1",
+    "postcss": "^8.5.6",
+    "tailwind-merge": "^1.14.0",
+    "tailwindcss": "^3.4.18",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
+  }
+}
